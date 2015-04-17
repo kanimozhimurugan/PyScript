@@ -1,0 +1,15 @@
+"""
+Get the student's data into a dict and calculate the avg of the marks
+"""
+t = int(raw_input())
+a = {}
+for i in range(t):
+    a[i] = dict()
+    stud = raw_input().split()
+    a[i]['name'] = stud[0]
+    a[i]['math'], a[i]['phy'], a[i]['che'] = stud[1], stud[2], stud[3]
+check = raw_input()
+for j in a:
+    if check == a[j].get('name'):
+        avg = float(float(a[j]['math']) + float(a[j]['phy']) + float(a[j]['che']))/3
+        print "%0.2f" %(avg)
