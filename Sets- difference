@@ -1,0 +1,12 @@
+"""
+Get 2 list and find the difference betweent the 2 list. print out the difference elements in ascending order
+"""
+a = raw_input()
+al = raw_input().split()
+new_al = set(list(map(int, al)))
+b = raw_input()
+bl = raw_input().split()
+new_bl = set(list(map(int, bl)))
+l = (new_al.difference(new_bl)).union(new_bl.difference(new_al))
+for each in sorted(list(l)):
+    print each
