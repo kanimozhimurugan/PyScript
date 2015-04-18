@@ -1,0 +1,10 @@
+import re
+t = int(raw_input())
+l = []
+v = re.compile('^([\w_-]+@[0-9a-zA-Z]+\.[\w]{0,3})$')
+for i in range(t):
+    n = raw_input()
+    l.append(n)
+new = list(filter(v.search,l))    
+print sorted(new)
+    
