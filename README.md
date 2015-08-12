@@ -1,2 +1,1 @@
-# PyScript
-Practice Py
+""" Useful Python libraries and modules """
